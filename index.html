@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="louvleea">
+  <meta name="description" content="웹 표준을 준수한 사이트 예제입니다.">
+  <meta name="keywords" content="러블리아, 웹 표준, 웹 접근성, 사이트 만들기">
+  <meta name="generator" content="VSCode">
+  <title>Web Standards Site</title>
+  <!-- CSS Style Load -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/lightgallery.css">
+</head>
+<body>
+  <!-- u_skip -->
+  <div id="u_skip">
+    <a href="#cont_nav">전체 영역 바로가기</a>
+    <a href="#cont_banner">배너 영역 바로가기</a>
+    <a href="#cont_section">컨텐츠 영역 바로가기</a>
+  </div>
+  <!-- // u_skip --> 
+
+  <!-- wrap -->
+  <div id="wrap">
+    <!-- header -->
+    <div id="header">
+      <div class="container">
+        <div class="u_menu">
+          <a href="">Login</a>
+          <a href="">Join</a>
+          <a href="">Home</a>
+        </div> <!-- // util menu -->
+        
+        <div class="header_title">
+          <h1>PROFESSIONAL PUBLISHER &amp; DESIGNER</h1>
+          <a href="https://louvleea.github.io/web-standards/" target="_blank">Web Standards Site</a>
+        </div> <!-- // header title -->
+
+        <div class="header_icon">
+          <!-- 💡 이미지를 표현하는 방법
+            1. HTML <img>태그로 표현 / 해당 이미지가 의미가 있을 때, alt 속성을 이용하여 대체 텍스트 제공
+            2. CSS {background}속성으로 표현 / 해당 이미지가 의미가 없을 때, 대체 텍스트 X(웹 접근성 무시)
+            3. CSS {background}속성으로 표현(이미지 스프라이트 기법; 운영성 이미지의 성격이 아닌 아이콘 또는 장식을 위한 기타 이미지 요소들은 스프라이트 기법을 활용하여 파일의 Size, Request 최소화를 도모) / 해당 이미지가 의미가 있을 때, 가상으로 대체 텍스트 제공(blind 기법; 이미지 대체 택스트 제공을 위한 CSS 기법)
+          -->
+          <a href="#" class="sp_ico1"><span class="blind_wa">icon1</span></a>
+          <a href="#" class="sp_ico2"><span class="blind_wa">icon2</span></a>
+          <a href="#" class="sp_ico3"><span class="blind_wa">icon3</span></a>
+          <a href="#" class="sp_ico4"><span class="blind_wa">icon4</span></a>
+        </div> <!-- // header icon -->
+      </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content">
+      <div id="cont_nav">
+        <div class="container clear">
+          <h2 class="blind_so">전체 메뉴</h2>
+          <div>
+            <h3>HTML Reference</h3>
+            <ol class="clear">
+              <li><a href="#">HTML 태그(Tag)</a></li>
+              <li><a href="#">블록 요소/인라인 요소</a></li>
+              <li><a href="#">DTD 선언</a></li>
+              <li><a href="#">언어 속성 설정</a></li>
+              <li><a href="#">HTML &lt;title&gt;</a></li>
+              <li><a href="#">HTML &lt;meta&gt;</a></li>
+              <li><a href="#">특수문자</a></li>
+              <li><a href="#">하이퍼 링크</a></li>
+              <li><a href="#">HTML &lt;style&gt;</a></li>
+              <li><a href="#">HTML &lt;html&gt;</a></li>
+              <li><a href="#">HTML &lt;head&gt;</a></li>
+              <li><a href="#">HTML &lt;div&gt;</a></li>
+              <li><a href="#">HTML &lt;colgroup&gt;</a></li>
+              <li><a href="#">HTML &lt;caption&gt;</a></li>
+            </ol>
+          </div>
+
+          <div>
+            <h3>CSS Reference</h3>
+            <ol>
+              <li><a href="#">CSS 선택자</a></li>
+              <li><a href="#">CSS 단위</a></li>
+              <li><a href="#">CSS 색상</a></li>
+              <li><a href="#">CSS 선언 방법</a></li>
+              <li><a href="#">상대주소와 절대주소</a></li>
+              <li><a href="#">이미지 표현 방법</a></li>
+              <li><a href="#">이미지 스프라이트 기법</a></li>
+              <li><a href="#">blind 기법</a></li>
+              <li><a href="#">이미지 최적화</a></li>
+              <li><a href="#">float</a></li>
+              <li><a href="#">border-style</a></li>
+              <li><a href="#">background-color</a></li>
+              <li><a href="#">font-size</a></li>
+              <li><a href="#">text-align</a></li>
+            </ol>
+          </div>
+
+          <div>
+            <h3>Webstandard</h3>
+            <ol>
+              <li><a href="#">웹 표준</a></li>
+              <li><a href="#">웹 접근성</a></li>
+              <li><a href="#">W3C</a></li>
+              <li><a href="#">웹 접근성 연구소</a></li>
+              <li><a href="#">네이버 널리</a></li>
+              <li><a href="#">다음 다룸</a></li>
+              <li><a href="#">Webstandards</a></li>
+            </ol>
+          </div>
+        </div>
+      </div> <!-- // content nav -->
+
+      <div id="cont_title">
+        <div class="container">
+          <h2>나는 퍼블리셔 연습용 사이트</h2>
+          <a href="#" class="sp_btn"><span class="blind_pm">전체 메뉴</span></a>
+        </div>
+      </div> <!-- // content title -->
+
+      <div id="cont_banner">
+        <div class="container">
+          <!--
+          <a href="#" class="prev"><span class="blind_wa">이전 이미지</span></a>
+          <ul>
+            <li><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></li>
+            <li><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></li>
+            <li><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></li>
+          </ul>
+          <a href="#" class="next"><span class="blind_wa">다음 이미지</span></a>
+          -->
+          <div class="banner"> <!-- Slick Plug-in -->
+            <div><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
+            <div><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
+            <div><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
+            <div><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
+            <div><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
+          </div>
+        </div>
+      </div> <!-- // content banner -->
+
+      <div id="cont_section">
+        <div class="container">
+          <div class="clear">
+            <div class="board box1">
+              <h3><span class="sp_ico blind_pm">아이콘</span><span class="ico_tit">Notice</span></h3>
+              <p class="ico_desc">웹 페이지의 가장 기본이 되는 게시판 유형입니다.</p>
+              <!-- 세부 목록(list) -->
+              <div class="list1">
+                <h4>Web Pubisher Notice</h4>
+                <ul>
+                  <li><a href="#">'display: inline'과 'display: block'의 차이점은 무엇인가요?</a></li>
+                  <li><a href="#">HTML 태그 중에 'dl', 'dd', 'ul', 'ol', 'li'의 차이점이 무엇인가요?</a></li>
+                  <li><a href="#">HTML 태그 중에 'strong'과 'em'의 차이점은 무엇인가요?</a></li>
+                  <li><a href="#">콘텐츠 요소를 가운데로 오게 하는 방법을 알려주세요!</a></li>
+                  <li><a href="#">'DOCTYPE'을 선언하는 이유에 대해서 설명해 주세요.</a></li>
+                </ul>
+                <a href="#" class="sp_more blind_pm" title="더보기">더보기</a>
+              </div>
+
+              <div class="list2">
+                <h4>Web Designer Notice</h4>
+                <ul>
+                  <li><a href="#">JPG, PNG, GIF의 차이점이 무엇인가요?</a><span>2022.11.16</span></li>
+                  <li><a href="#">UI 디자인과 UX 디자인의 차이점을 설명하세요.</a><span>2022.11.16</span></li>
+                  <li><a href="#">인터랙션 디자인의 핵심은 무엇이라고 생각하나요?</a><span>2022.11.16</span></li>
+                  <li><a href="#">포트폴리오를 하면서 가장 잘했다고 생각하는 부분은 무엇인가요?</a><span>2022.11.16</span></li>
+                  <li><a href="#">웹 디자인과 모바일 디자인의 차이가 무엇이라고 생각하나요?</a><span>2022.11.16</span></li>
+                </ul>
+                <a href="#" class="sp_more blind_pm" title="더보기">더보기</a>
+              </div>
+              <!-- // 세부 목록(list) -->
+            </div> <!-- // board 1 -->
+
+            <div class="board box2">
+              <h3><span class="sp_ico blind_pm">아이콘</span><span class="ico_tit">Notice</span></h3>
+              <p class="ico_desc">웹 페이지의 가장 기본이 되는 게시판 유형입니다.</p>
+              <!-- 세부 목록(thumbnail) -->
+              <div class="thumb">
+                <h4>HTML Reference</h4>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="img/notice01.jpg" alt="이미지 1">
+                      <strong>[HTML] &lt;table&gt;</strong><br>
+                      <span>'table' 태그는 표를 만들 때 사용합니다.</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/notice02.jpg" alt="이미지 2">
+                      <strong>[HTML] &lt;div&gt;</strong><br>
+                      <span>'div' 태그는 문서의 섹션을 만들거나 영역을 나눌 때 사용합니다.</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/notice03.jpg" alt="이미지 3">
+                      <strong>[HTML] &lt;dl&gt;</strong><br>
+                      <span>'dl' 태그는 용어를 설명하는 목록형 태그입니다.</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/notice04.jpg" alt="이미지 4">
+                      <strong>[HTML] &lt;em&gt;</strong><br>
+                      <span>'em' 태그는 텍스트를 강조할 때 사용합니다.</span>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="sp_more blind_pm" title="더보기">더보기</a>
+              </div>
+              <!-- // 세부 목록(thumbnail) -->
+            </div> <!-- // board 2 -->
+
+            <div class="board box3">
+              <h3><span class="sp_ico blind_pm">아이콘</span><span class="ico_tit">Notice</span></h3>
+              <p class="ico_desc">웹 페이지의 가장 기본이 되는 게시판 유형입니다.</p>
+              <!-- 세부 목록(login) -->
+              <div id="login">
+                <h4 class="blind_so">로그인 정보</h4>
+                <form id="login_form" name="login_form" action="post">
+                  <fieldset>
+                    <legend class="blind_so">로그인 및 관련 설정</legend>
+                    <div class="login_header clear">
+                      <h5 class="blind_so">로그인 보안</h5>
+                      <p class="login_check">
+                        <input type="checkbox" name="keeping" id="keeping" class="keeping">
+                        <label for="keeping">로그인 상태 유지</label>
+                      </p>
+                      <p class="login_sc">IP보안 <b>ON</b></p>
+                    </div>
+
+                    <div class="login_content">
+                      <h5 class="blind_so">로그인 영역</h5>
+                      <div class="login_info">
+                        <label for="user_id" class="blind_so">아이디</label>
+                        <input type="text" name="user_id" id="user_id" maxlength="20" class="user_id" placeholder="아이디"><br>
+                        <label for="user_pwd" class="blind_so">비밀번호</label>
+                        <input type="password" name="user_pwd" id="user_pwd" maxlength="20" class="user_pwd" placeholder="비밀번호">
+                      </div>
+                      <button type="submit" class="login_btn">로그인</button>
+                    </div>
+                    
+                    <div class="login_footer">
+                      <h5 class="blind_so">로그인 문제 해결</h5>
+                      <p>
+                        <a href="#"><strong>회원가입</strong></a> /
+                        <a href="#">아이디</a> &middot;
+                        <a href="#">비밀번호</a> 찾기
+                      </p>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <!-- // 세부 목록(login) -->
+
+              <!-- 세부 목록(popup) -->
+              <div class="popup">
+                <h4>Advertisement</h4>
+                <ul class="clear">
+                  <li class="layer_pop"><a href="#"><img src="img/sban07.jpg" alt="이미지 1" title="레이어 팝업"></a></li>
+                  <li class="window_pop"><a href="#"><img src="img/sban08.jpg" alt="이미지 2" title="윈도우 팝업"></a></li>
+                  <li class="lightgallery">
+                    <a href="img/webstandard3.jpg"><img src="img/sban09.jpg" alt="이미지 3" title="라이트 박스"></a>
+                    <a href="img/webstandard3.jpg" style="display: none"><img src="img/sban09.jpg" alt="이미지 3" title="라이트 박스"></a>
+                    <a href="img/webstandard3.jpg" style="display: none"><img src="img/sban09.jpg" alt="이미지 3" title="라이트 박스"></a>
+                    <a href="img/webstandard3.jpg" style="display: none"><img src="img/sban09.jpg" alt="이미지 3" title="라이트 박스"></a>
+                    <a href="img/webstandard3.jpg" style="display: none"><img src="img/sban09.jpg" alt="이미지 3" title="라이트 박스"></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- //세부 목록(popup) -->
+            </div> <!-- // board 3 -->
+
+            <div class="board box4">
+              <h3><span class="sp_ico blind_pm">아이콘</span><span class="ico_tit">Notice</span></h3>
+              <p class="ico_desc">웹 페이지의 가장 기본이 되는 게시판 유형입니다.</p>
+              <!-- 세부 목록(image hover effect) -->
+              <div class="img_hover1">
+                <h4>Mouse Hover</h4>
+                <ul class="clear">
+                  <li>
+                    <a href="#">
+                      <span>
+                        <img src="img/sban01.jpg" alt="이미지 1"><em>바로가기</em>
+                      </span>
+                      <strong>와이어 프레임</strong>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>
+                        <img src="img/sban02.jpg" alt="이미지 2"><em>바로가기</em>
+                      </span>
+                      <strong>스케치 작업</strong>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>
+                        <img src="img/sban03.jpg" alt="이미지 3"><em>바로가기</em>
+                      </span>
+                      <strong>UI 디자인</strong>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="img_hover2">
+                <h4 class="blind_so">Mouse Hover</h4>
+                <ul class="clear">
+                  <li>
+                    <a href="#">
+                      <span>
+                        <img src="img/sban04.jpg" alt="이미지 4"><em>바로가기</em>
+                      </span>
+                      <strong>HTML</strong>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>
+                        <img src="img/sban05.jpg" alt="이미지 5"><em>바로가기</em>
+                      </span>
+                      <strong>CSS</strong>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>
+                        <img src="img/sban06.jpg" alt="이미지 6"><em>바로가기</em>
+                      </span>
+                      <strong>jQuery</strong>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- // 세부 목록(image hover effect) -->
+            </div> <!-- // board 4 -->
+
+            <div class="board box5">
+              <h3><span class="sp_ico blind_pm">아이콘</span><span class="ico_tit">Notice</span></h3>
+              <p class="ico_desc">웹 페이지의 가장 기본이 되는 게시판 유형입니다.</p>
+              <!-- 세부 목록(tab menu) -->
+              <div class="tab_menu">
+                <h4 class="blind_so">탭 메뉴</h4>
+                <ul class="clear">
+                  <li class="active">
+                    <a href="#">공지사항 1</a>
+                    <ul>
+                      <li><a href="#">첫 번째 공지사항 탭 메뉴 테스트 목록입니다. 첫 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                      <li><a href="#">첫 번째 공지사항 탭 메뉴 테스트 목록입니다. 첫 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                      <li><a href="#">첫 번째 공지사항 탭 메뉴 테스트 목록입니다. 첫 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">공지사항 2</a>
+                    <ul style="display: none">
+                      <li><a href="#">두 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                      <li><a href="#">두 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                      <li><a href="#">두 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">공지사항 3</a>
+                    <ul style="display: none">
+                      <li><a href="#">세 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                      <li><a href="#">세 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                      <li><a href="#">세 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- // 세부 목록(tab menu) -->
+
+              <!-- // 세부 목록(list) -->
+              <div class="list3">
+                <h4>최신 <em>공지사항</em></h4>
+                <ul>
+                  <li><a href="#">웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?</a><span>2022.11.17</span></li>
+                  <li><a href="#">웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?</a><span>2022.11.17</span></li>
+                  <li><a href="#">웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?</a><span>2022.11.17</span></li>
+                </ul>
+                <a href="#" class="sp_more" title="더보기">더보기</a>
+              </div>
+              <!-- // 세부 목록(list) -->
+            </div> <!-- // board 5 -->
+
+            <div class="board box6">
+              <h3><span class="sp_ico blind_pm">아이콘</span><span class="ico_tit">Notice</span></h3>
+              <p class="ico_desc">웹 페이지의 가장 기본이 되는 게시판 유형입니다.</p>
+              <!-- 세부 목록(gallery) -->
+              <div class="gallery">
+                <h4>포트폴리오</h4>
+                <!--
+                <ul class="g_btn clear">
+                  <li><a href="#" class="sp_ico_gb1"><span class="blind_pm">시작</span></a></li>
+                  <li><a href="#" class="sp_ico_gb2"><span class="blind_pm">정지</span></a></li>
+                  <li><a href="#" class="sp_ico_gb3"><span class="blind_pm">이전 이미지</span></a></li>
+                  <li><a href="#" class="sp_ico_gb4"><span class="blind_pm">다음 이미지</span></a></li>
+                </ul>
+                <ul class="g_img">
+                  <li><a href="#"><img src="img/gallery01.jpg" alt="갤러리 1"></a></li>
+                  <li><a href="#"><img src="img/gallery02.jpg" alt="갤러리 2"></a></li>
+                  <li><a href="#"><img src="img/gallery03.jpg" alt="갤러리 3"></a></li>
+                  <li><a href="#"><img src="img/gallery04.jpg" alt="갤러리 4"></a></li>
+                  <li><a href="#"><img src="img/gallery05.jpg" alt="갤러리 5"></a></li>
+                </ul>
+                -->
+                <div class="g_btn"> <!-- Slick Plug-in -->
+                  <button class="sp_ico_gb1 play"><span class="blind_pm">시작</span></button>
+                  <button class="sp_ico_gb2 pause"><span class="blind_pm">정지</span></button>
+                  <button class="sp_ico_gb3 prev"><span class="blind_pm">이전 이미지</span></button>
+                  <button class="sp_ico_gb4 next"><span class="blind_pm">다음 이미지</span></button>
+                </div>
+                <div class="g_img">
+                  <div><a href="#"><img src="img/gallery01.jpg" alt="갤러리 1"></a></div>
+                  <div><a href="#"><img src="img/gallery02.jpg" alt="갤러리 2"></a></div>
+                  <div><a href="#"><img src="img/gallery03.jpg" alt="갤러리 3"></a></div>
+                  <div><a href="#"><img src="img/gallery04.jpg" alt="갤러리 4"></a></div>
+                  <div><a href="#"><img src="img/gallery05.jpg" alt="갤러리 5"></a></div>
+                </div>
+              </div>
+              <!-- // 세부 목록(gallery) -->
+            </div> <!-- // board 6 -->
+          </div>
+        </div>
+      </div> <!-- // content section -->
+    </div>
+    <!-- // content -->
+
+    <!-- footer -->
+    <div id="footer">
+      <div class="container">
+        <h2 class="blind_so">푸터 영역</h2>
+        <ul>
+          <li><a href="#">사이트 도움말</a>|</li>
+          <li><a href="#">사이트 이용약관</a>|</li>
+          <li><a href="#">사이트 운용규칙</a>|</li>
+          <li><a href="#"><strong>개인정보취급방침</strong></a>|</li>
+          <li><a href="#">책임의 한계와 법적고지</a>|</li>
+          <li><a href="#">게시중단 요청 서비스</a>|</li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+        <address>Copyright&copy;Web Standards Site. All Rights Reserved</address>
+        <div class="w3c">
+          <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flouvleea.github.io%2Fweb-standards%2F"><img src="https://louvleea.github.io/web-standards/img/w3c_html_icon.png" alt="올바른 HTML입니다!" style="width: 88px"></a>
+          <a href="https://jigsaw.w3.org/css-validator/validator?profile=css3&warning=0&uri=https%3A%2F%2Flouvleea.github.io%2Fweb-standards%2F"><img src="https://www.w3.org/Icons/valid-css-blue-v.svg" alt="올바른 CSS입니다!" style="width: 88px"></a>
+        </div>
+      </div>
+    </div>
+    <!-- // footer -->
+  </div>
+  <!-- // wrap -->
+
+  <!-- layer popup -->
+  <div id="layer">
+    <img src="img/webstandard1.jpg" alt="팝업창 1">
+    <a href="#" class="close">Close</a>
+  </div>
+  <!-- // layer popup -->
+
+<!-- jQuery Load -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/lightgallery-all.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

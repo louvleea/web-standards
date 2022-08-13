@@ -25,7 +25,6 @@ a:hover{color: #390;}
 /* container(공통) */
 .container{
   width: 990px;
-  height: inherit;
   margin: 0 auto;
   /* background: rgba(255,255,255,0.1); */
 }
